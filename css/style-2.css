@@ -1,0 +1,145 @@
+#logo-image {
+    background: url("Epic-prime-removebg-preview.png") no-repeat;
+    width: 150px;
+    height: 120px;
+    background-size:contain;
+    margin-bottom: 0px;
+}
+#fondo{
+    background: url(pexels-lucie-liz-3165335.jpg) no-repeat fixed;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    margin-bottom: 0px;
+
+}
+#cuenta {
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border: none;
+}
+#cuenta:hover{
+    color: grey;
+}
+
+#dropdownMenulink {
+    font-size: 22px;
+    color: grey;
+    border: none;
+}
+#dropdownMenulink:hover{
+    color: white;
+
+}
+.dropdown-menu {
+    left:auto !important;
+    right:0 !important ;
+}
+.card {
+    border: black !important;
+    border-radius: px !important;
+}
+#contenedor {
+    background-color: #343a40;
+    margin-top: 0px ;
+    
+}
+#card-container {
+    margin-top: 4%;
+}
+    
+body {
+    background: #000;
+}
+
+.center-con {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    border: 3px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+span {
+    z-index: 999;
+    height: 3px;
+    margin:1px;
+    width: 30px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+}
+#Botones {
+margin-left: 30%;
+margin-right: 30%;
+background-color: transparent !important;
+}
+.contenedor {
+background: rgb(10,10,10) !important;
+background: linear-gradient(90deg, rgba(10,10,10,1) 2%, rgba(62,62,70,1) 43%, rgba(127,151,154,1) 95%) !important;
+
+}
+#tienda{
+    font-size: 22px!important;
+    color: grey!important;
+    border: none !important;
+}
+#tienda:hover{
+    color: white!important;
+}

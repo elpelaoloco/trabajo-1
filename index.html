@@ -1,0 +1,109 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>PICKAPP</title>
+</head>
+<body>
+    <div id = "fondo">
+    <header><!-- header -->
+        <nav id="header-nav" class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class = "navbar-header">
+                    <a id = "imagen" href="index.html">
+                        <div id ="logo-image" alt = "logo" class="pull-left visible-lg visible-md visible-sm"></div>
+                    </a>   
+                </div>
+                <li class="pull-left d-flex nav-item justify-content-end">
+                    <button id="registro" type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#Modal2">Registrarse</button>
+                    <button id="registro" type="button" class="btn btn-dark"> <a id="registro" type="button" class="btn btn-dark" href="#fondo-2">¿Que hacemos?</a> </button>
+                </li>
+            </div>
+        </nav>
+    </header>
+    <main class="container" id="main-content">
+        <div class="row">
+            <h1 id="inicio" class="d-flex justify-content-center">Pick App</h1>
+            <h2 id ="texto" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 d-flex justify-content-center">El mejor servicio para viajes compartidos</h1>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 d-flex justify-content-center">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" id="boton">Iniciar Sesion</button>
+            </div>
+            <!--  pop up de iniciar sesion-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ingreso</h5>
+                            <button type="button" id="salida" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center">
+                            <form action="php/validacion.php" method="post">
+                            
+                                <img  id= "gamepad" src="gamepad-definitivo.png" height="100px" width="150px" alt="gamepad">
+                                <input class="form-control" type="email" name="email" placeholder="email"><br>
+                                <input class = "form-control" type="password" name="contraseña" placeholder="Contraseña">
+                            </form>
+                        </div>
+                        <button  id="botones" type="button" class="btn btn-primary">Iniciar Sesion</button>
+                        <button id="botones" type="button" class="btn-cancel btn-secondary" data-bs-dismiss="modal">Close</button>   
+                    </div>
+                </div>
+                <!-- pop up de registrarse-->
+            </div>
+            <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Crear Cuenta</h5>
+                            <button type="button" id="salida" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center">
+                            <form action="php/registro.php" method="post">
+                                <img  id= "gamepad" src="consola-removebg-preview.png" height="100px" width="150px" alt="gamepad">
+                                <input class="form-control" type="text" name="user" placeholder="Usuario"><br>
+                                <input type="email" class="form-control" name="email" placeholder="Email"><br>
+                                <input class = "form-control" type="password" name="contraseña" placeholder="Contraseña">
+                                
+                            </form>
+                        </div>
+                        <button  id="botones" type="button" class="btn btn-primary">Registrarse</button>
+                        <button id="botones" type="button" class="btn-cancel btn-secondary" data-bs-dismiss="modal">Close</button>   
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>    
+    </main>
+    <div id="fondo-2">
+        <div id = "text-container">
+            <div  class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 d-flex justify-content-center text-white">
+                    <h3> Somos una aplicacion para coordinar viajes de forma compartida</h3></div>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 d-flex justify-content-center text-white"><h3>¿Como es eso?</h3></div>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 d-flex justify-content-center text-white"><p>Somos una aplicacion en la que puedes publicar tu viaje a donde sea y encontrar a integrantes</p></div>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 d-flex justify-content-center text-white"><h3>¿Que funcionalidades tenemos?</h3></div>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 d-flex justify-content-center text-white">
+                    <ul>
+                        <li>Publicacion de viajes</li>
+                        <li>Reseñas sobre usuarios y viajes</li>
+                        <li>Chat grupal</li>
+                        <li>Descripcion de usuarios</li>
+                        <li>Viajes agrupados por cercania</li>
+                    </ul></div>
+                   
+            </div>
+        </div>
+    </div>         
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
